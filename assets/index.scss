@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Da+2|Roboto|Ubuntu|Ubuntu+Mono&display=swap');
+
+@import "./variables.css";
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+li,
+a,
+button {
+    font-weight: 400;
+    font-size: 24px;
+    color: $color;
+}
+
+.header-bg {
+    background-color: $lightbackground-color;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+
+    img {
+        cursor: pointer;
+        margin-right: auto;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        display: inline-block;
+        padding: 0px 20px;
+    }
+
+    a {
+        transition: all 0.3s ease 0s;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $primaryColor;
+    }
+
+    .button1 {
+        margin-left: 20px;
+        padding: 9px 25px;
+        background-color: $primaryColor;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s ease 0;
+    }
+
+    .button2 {
+        margin-left: 20px;
+        padding: 9px 25px;
+        background-color: #293942;
+        color: $primaryColor;
+        border: 1px solid $primaryColor;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s ease 0;
+    }
+}
+
+
+.discover-bg {
+    padding: 10em 0;
+    background-image: url("./background/iphone.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+
+
+    .discover-content {
+        width: 50%;
+    }
+
+
+    p {
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 64px;
+        color: $color;
+    }
+
+    button {
+        width: 211px;
+        height: 55px;
+        background-color: $primaryColor;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s ease 0;
+        margin: $oneEm 0;
+    }
+
+    .discover-image {
+        width: 55%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.brand-bg {
+    padding: 2em 0;
+    background: $lightbackground-color;
+    box-shadow: inset 0px 30px 20px rgba(26, 26, 26, 0.25);
+
+    .brand-display {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+.music-you-love {
+    background: $darkbackground-color;
+    padding: 3em 0;
+    box-shadow: inset 0px 30px 20px rgba(26, 26, 26, 0.25);
+
+    .music-content {
+        display: grid;
+        grid-template-columns: $gridRepeat;
+        grid-template-rows: auto;
+    }
+
+    .music-images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: $gridRepeat;
+        grid-gap: $oneEm;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .music-typo {
+        align-self: center;
+        justify-self: center;
+
+
+        .typo {
+            margin-left: auto;
+            width: 90%;
+
+
+            h1 {
+                margin: .5em 0;
+                color: $color;
+            }
+
+            p {
+                word-wrap: break-word;
+                word-break: break-all;
+                margin: .4em 0;
+            }
+
+            img {
+                width: .4em;
+                margin-right: .3em;
+            }
+        }
+    }
+
+}
+
+
+
+.handlepicked-bg {
+    background: $darkbackground-color;
+    padding: 3em 0;
+    box-shadow: inset 0px 30px 20px rgba(26, 26, 26, 0.25);
+    margin: $oneEm 0;
+
+
+    .handle-display {
+        display: grid;
+        grid-template-columns: $gridRepeat;
+        grid-template-rows: auto;
+
+        .handlepicked-content {
+            align-self: center;
+            justify-self: center;
+
+            h2 {
+                color: $color;
+                margin: .5em 0;
+            }
+
+            p {
+                margin: .4em 0;
+            }
+
+            img {
+                width: .4em;
+                margin-right: .3em;
+            }
+        }
+
+        .handlepicked-image {
+            display: grid;
+            grid-template-columns: $gridRepeat;
+            grid-template-rows: auto;
+            grid-gap: 2em;
+
+
+            img {
+                width: 100%;
+                height: 500px;
+            }
+        }
+    }
+
+
+
+
+}
+
+.radio-bg {
+    background: $darkbackground-color;
+    color: $color;
+    box-shadow: inset 0px 30px 20px rgba(26, 26, 26, 0.25);
+    margin-top: $oneEm;
+    padding: 2em 0;
+
+    h1 {
+        margin: $oneEm 0;
+    }
+
+    .radio-display {
+        display: grid;
+        grid-template-columns: $gridRepeat;
+        grid-template-rows: $gridRepeat;
+        grid-gap: 3em;
+
+        p {
+            margin: 2em 0 2em $oneEm;
+        }
+
+        .content {
+
+
+            &::before {
+                content: "";
+                background-color: $primaryColor;
+                width: 3px;
+                height: 30px;
+                float: left;
+                margin-right: $oneEm;
+            }
+
+        }
+
+    }
+}
+
+
+
+.radio-head-bg {
+    background: $lightbackground-color;
+    padding: 5em 0;
+
+    .radio-head-content {
+        display: grid;
+        grid-template-columns: .8fr 1fr;
+
+        .radio-img {
+            width: 90%;
+
+            p {
+                margin: $oneEm 0;
+            }
+        }
+
+
+        .radio-content {
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                margin: $oneEm 0;
+                color: $color;
+            }
+        }
+    }
+}
+
+
+
+.footer {
+    background: $darkbackground-color;
+    padding: $oneEm 0;
+
+    .footer-content {
+        width: 30%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+}

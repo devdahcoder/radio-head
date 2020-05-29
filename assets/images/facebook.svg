@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="17px" height="32px" viewBox="0 0 17 32" version="1.1" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" 
+    xmlns="http://www.w3.org/2000/svg">
+    <desc>Created with Lunacy</desc>
+    <g id="facebook">
+        <path d="M13.08 5.31333L16.0013 5.31333L16.0013 0.225333C15.4973 0.156 13.764 0 11.7453 0C7.53333 0 4.648 2.64933 4.648 7.51867L4.648 12L0 12L0 17.688L4.648 17.688L4.648 32L10.3467 32L10.3467 17.6893L14.8067 17.6893L15.5147 12.0013L10.3453 12.0013L10.3453 8.08267C10.3467 6.43867 10.7893 5.31333 13.08 5.31333L13.08 5.31333Z" transform="translate(0.06183333 0)" id="Path" fill="#FFFFFF" stroke="none" />
+    </g>
+</svg>
